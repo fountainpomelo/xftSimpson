@@ -1,0 +1,36 @@
+/*footer*/
+body .myCTfooter {
+    margin-top: 10px;
+    height: 250px;
+    background: #000;
+    width: 100%;
+    border-top: 3px solid #ffdd32;
+
+}
+
+.myCTfooter-inner > ul li {
+    font-family: "microsoft yahei";
+    float: left;
+    padding-left: 10px;
+    margin: 30px 20px 0 0;
+}
+
+.myCTfooter-inner > ul li dt {
+    color: silver;
+    padding-bottom: 10px;
+}
+
+.myCTfooter-inner > ul li dd {
+
+}
+
+.myCTfooter-inner > ul li a {
+    transition: all .2s ease-in-out;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #959595;
+}
+
+.myCTfooter-inner > ul li a:hover {
+    color: #ffdd32;
+}

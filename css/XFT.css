@@ -1,0 +1,366 @@
+/*初始化*/
+body, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline-style: none;
+    border: 0;
+}
+
+img {
+    border: 0 none;
+}
+
+.clearfix:after {
+    height: 0;
+    line-height: 0;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.fr {
+    float: right;
+}
+
+/*具体样式*/
+html, body {
+    font-family: "Microsoft YaHei", "simsun", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black;
+    background: repeating-linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 1) 20px,
+            rgba(255, 255,255 , 1) 20px,
+            rgba(255, 255, 255, 1) 60px
+    );
+    width: 100%;
+
+}
+
+h1 {
+    /*position: fixed;*/
+    /*top: 0%;*/
+    /*left: 50%;*/
+    /*display: inline-block!important;*/
+    color: white !important;
+    font-size: 1.3vw!important;
+    font-family: 'VT323','microsoft yahei' !important;
+    line-height: 40px;
+    text-shadow: 10px 5px 5px black;
+    /*font-weight: bolder;*/
+    transform: translate(-50%, -50%);
+}
+.h1shan{
+    padding-left: 140px;
+    height: 40px;
+    /*padding-top: 20px;*/
+}
+.w {
+    width: 1000px;
+    margin: 0 auto;
+    /*position: relative;*/
+    /*top: 100px;*/
+    /*left: 50%;*/
+    /*margin-left: -500px;*/
+}
+.layui-breadcrumb{
+    visibility: visible!important;
+}
+/*bart导航栏部分*/
+.nav {
+    /*position: fixed;*/
+    /*height: 40px;*/
+    width: 100%;
+    /*top: 0%;*/
+    background-color: black;
+    box-shadow: 0px 5px 5px black;
+    /*z-index: 40;*/
+}
+
+.nav ul li {
+    float: left;
+
+}
+
+.nav ul li img {
+    width: 40px;
+}
+
+.nav ul li a {
+    display: inline-block;
+    padding: 0 10px;
+
+    line-height: 40px;
+    color: #fff0ce;
+}
+.nav1{
+    padding: 0 80px;
+    /*position: relative;*/
+}
+.signIn{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    background: white;
+    width: 250px;
+    display: none;
+    position: absolute;
+    top: 47px;
+    padding: 30px;
+    right: 0px;
+    z-index: 3;
+
+
+}
+.signIn-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: silver!important;
+}
+ .selectBox{
+     position: absolute;
+     top: 50px;
+     left: 0;
+     z-index: 4;
+    /*margin-top: 12px;*/
+    box-shadow: 0px 5px 5px black;
+    display: none;
+    width: 100px;
+    padding: 0 10px;
+    background-color: #fff0ce;
+    height: 150px;
+}
+ ul.selectBox li a{
+    display: inline-block;
+    height: 25px;
+    color: black;
+    line-height: 25px;
+
+}
+.breadcrumb{
+    background-color: rgba(0,0,0,0)!important;
+    margin-bottom: -10px!important;
+    /*margin-top: 2px;*/
+    /*color: #fff0ce!important;*/
+    /*padding-left: 10px;*/
+}
+.simbreadcrumb a{
+    color: #fff0ce;
+}
+/*导航栏部分结束*/
+.link-btn {
+    position: absolute;
+    top: 0;
+    left: -150px;
+}
+
+.link-btn button {
+    font-family: "microsoft yahei";
+    display: inline-block;
+    /*color: #000;*/
+    border: 2px outset rgba(0, 0, 0, 0.9);
+    /*background: #C0C0C0;*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    transition: 0.2s;
+
+}
+
+.link-btn button:hover {
+    transition: 0.2s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    border: 2px outset rgba(0, 0, 0, 0.9);
+    background-color: black;
+    color: #fff0ce;
+
+}
+
+/*首页大图片轮播部分*/
+.allSimpson {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    width: 1001px;
+    height: 573px;
+    border: 3px outset rgba(0, 0, 0, 0.9);
+
+    /*padding: 7px;*/
+    /*border: 1px solid #ccc;*/
+    margin: 10px auto;
+    position: relative;
+}
+
+.allSimpson-pic {
+    width: 1001px;
+    height: 573px;
+    overflow: hidden;
+    position: relative;
+}
+
+.allSimpson-pic li {
+    width: 1001px;
+    height: 573px;
+    overflow: hidden;
+    float: left;
+}
+
+.allSimpson-pic ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 5000px;
+}
+
+.allSimpson ol {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.allSimpson ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: #ffe533;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.allSimpson ol li.current {
+    background: yellow;
+}
+
+.allSimpson ol li.simcurrent {
+    background-color: yellow;
+}
+
+/*首页大图片轮播结束*/
+/*其他卡通部分*/
+.othcartoon {
+    margin-top: 50px;
+    /*height: 1600px;*/
+    width: 100%;
+    /*background-color: rgba(23, 23, 23, 0.5);*/
+    /*opacity: 0.5;*/
+
+}
+
+.simContent {
+    background: url("../img/Simpsons_cast.png") no-repeat right bottom;
+    padding: 20px 40px 100px;
+    font-size: 1.2em;
+    text-indent: 2em;
+    background-color: white;
+}
+
+.simContent p {
+    color: black;
+}
+
+/*滚动话题滚动部分*/
+.home-topics {
+    font-family: "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", Roboto, "Microsoft YaHei", sans-serif;
+    height: 60px;
+    background-color: black;
+}
+
+.home-topics strong {
+    color: #ffe533;
+    float: left;
+    line-height: 60px;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.topicinner a {
+    color: white;
+    line-height: 60px;
+    margin-right: .5em;
+    color: white;
+
+    display: inline-block;
+}
+
+.topicinner a:hover {
+    text-decoration: none;
+    color: #ffe533;
+}
+
+.topic-outer {
+    position: relative;
+    overflow: hidden;
+}
+
+.topicinner {
+    position: relative;
+    width: 4000px;
+}
+
+/*混动话题结束*/
+
+/*手风琴*/
+.goToWatchMe {
+    overflow: hidden;
+
+    height: 150px;
+}
+
+.goToWatchMe li {
+    /*border-top: 3px solid #ffe533;*/
+
+    float: left;
+    width: 192px;
+    height: 100%;
+    background: rgba(0, 0, 25, 0.5);
+}
+.goToWatchMe {
+    border: 4px solid black ;
+    /*border-radius: 4px;*/
+    border-top: none;
+}
+h5.goToWatchMeh5 {
+    font: 700 22px/50px "microsoft yahei"!important;
+    border: 4px solid black ;
+    height: 50px;
+    background-color: black;
+    padding-left: 10px;
+    width: 100%;
+    margin: 50px 0 0 0;
+    color: #ffe533;
+}
+.goToWatchMe-content{
+    width: 100%;
+}
+.goToWatchMe-content{
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.TOP {
+    float: right!important;
+
+}

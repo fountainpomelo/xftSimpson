@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css"-->
+    <!--href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="icon" href="img/FTCT.ico"/>
+    <link rel="stylesheet" href="css/XFT.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/myCTcomment.css" rel="stylesheet">
+
+    <script src="js/animate.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="layui/css/layui.css"/>
+</head>
+<body>
+<script>
+    $(function () {
+        $(".selectClick").click(function () {
+            $(".selectBox").toggle(1000);
+            return false;
+        })
+        $(".selectBox").mouseleave(function () {
+            $(".selectBox").hide(1000);
+        })
+        $(".TOP").click(function () {
+            window.scrollTo(0, 0)
+        })
+    })
+
+</script>
+<!--导航栏-->
+<div class="nav" id="nav">
+    <ul class=" nav1">
+        <li><a href="#"><img src="img/bart.png" alt=""/></a></li>
+        <li>
+            <a href="#">GoTo</a>
+            <ul>
+                <li></li>
+            </ul>
+        </li>
+        <li style="position: relative">
+            <a href="#" class="selectClick">select Cartoons</a>
+            <ul class="selectBox">
+                <li><a href="#">America</a></li>
+                <li><a href="#">Japan</a></li>
+                <li><a href="#">china</a></li>
+                <li><a href="#">Europe</a></li>
+                <li><a href="#">others</a></li>
+            </ul>
+        </li>
+        <li class="h1shan">
+            <a href="#"><h1 id="title"></h1></a>
+
+        </li>
+        <button class="btn btn-danger btn-signin" style="float: right; margin-top: 5px">Sign in</button>
+        <script>
+            $(function(){
+                $(".btn-signin").click(function () {
+                $(".signIn").show(1000);
+            })
+                $(".signIn-close").click(function(){
+                    $(".signIn").hide(300);
+                })
+            })
+
+        </script>
+
+    </ul>
+    <div class="signIn">
+        <button type="button" class="close signIn-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
+<!--<div class="w simbreadcrumb">-->
+    <!--<span class="layui-breadcrumb" lay-separator="|">-->
+        <!--<a href="#">首页></a>-->
+        <!--<a href="#">美洲地区></a>-->
+        <!--<a href="#">美国></a>-->
+        <!--<a href="#">辛普森</a>-->
+    <!--</span>-->
+<!--</div>-->
+<ol class="breadcrumb simbreadcrumb w">
+    <li><a href="#">Home</a></li>
+    <!--<li><a href="#"></a></li>-->
+    <li class="active">America</li>
+</ol>
+<div class="allSimpson clearfix" id='allSimpson'>
+    <div class="allSimpson-pic">
+        <ul>
+            <li><img src="img/simpsonAll1.jpg" width="1000"/></li>
+            <li><img src="img/simpsonAll2.jpg" width="1000"/></li>
+            <li><img src="img/simpsonAll3.jpg" width="1000"/></li>
+        </ul>
+        <ol></ol>
+    </div>
+    <div class="link-btn">
+        <button class="btn btn-default ">十一组</button>
+        <br/>
+        <br/>
+        <button class="btn btn-default ">我们是十一组</button>
+        <br/>
+        <br/>
+        <button class="btn btn-default ">十一组！</button>
+    </div>
+</div>
+<div class="othcartoon">
+    <section id="home-topics" class="home-topics w">
+        <strong>话 题：</strong>
+
+        <div class="topic-list not-end">
+            <div class="topic-outer">
+                <div class="topicinner">
+                    <a href="#">#美丽</a>
+                    <a href="#">#这是一个好地方</a>
+                    <a href="#">#肖宇同学又装嫩</a>
+                    <a href="#">#今天星期三</a>
+                    <a href="#">#为什么</a>
+                    <a href="#">#不就脸黄了点么</a>
+                    <a href="#">#年轻人们</a>
+                    <a href="#">#大楠姐最美</a>
+                    <a href="#">#fjj</a>
+                    <a href="#">#自远方来</a>
+                    <a href="#">#狱中生活</a>
+                    <a href="#">#今天摩拜融资了吗</a>
+                    <a href="#">#神预言川普上台</a>
+                    <a href="#">#请带感情阅读</a>
+                    <a href="#">#厕所串串</a>
+                    <a href="#">#盗版电影</a>
+                    <a href="#">#答应我别这样</a>
+                    <a href="#">#夏天快来</a>
+                    <a href="#">#尸骨之路</a>
+                    <a href="#">#我的钱呢</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="simContent w ">
+        <div class="fr">
+            <button class="btn btn-primary btn-sm btntobig">+</button>
+            <button class="btn btn-primary btn-sm btntosm">-</button>
+        </div>
+
+        <p>This article is about the television show. For the franchise, see The Simpsons (franchise). For other uses,
+            see The Simpsons (disambiguation).</p>
+
+        <p>The Simpsons is an American animated sitcom created by Matt Groening for the Fox Broadcasting
+            Company.[1][2][3] The series is a satirical depiction of working-class life epitomized by the Simpson
+            family, which consists of Homer, Marge, Bart, Lisa, and Maggie. The show is set in the fictional town of
+            Springfield and parodies American culture, society, television, and the human condition.
+        </p>
+
+        <p> The family was conceived by Groening shortly before a solicitation for a series of animated shorts with
+            producer James L. Brooks. Groening created a dysfunctional family and named the characters after members of
+            his own family, substituting Bart for his own name. The shorts became a part of The Tracey Ullman Show on
+            April 19, 1987. After a three-season run, the sketch was developed into a half-hour prime time show and
+            became an early hit for Fox, becoming the network's first series to land in the Top 30 ratings in a season
+            (1989–90).
+        </p>
+
+        <p>
+            Since its debut on December 17, 1989, 613 episodes of The Simpsons have been broadcast. Its 28th season
+            began on September 25, 2016. It is the longest-running American sitcom and the longest-running American
+            animated program, and, in 2009, it surpassed Gunsmoke as the longest-running American scripted primetime
+            television series. The Simpsons Movie, a feature-length film, was released in theaters worldwide on July 27,
+            2007, and grossed over $527 million. On May 4, 2015, the series was renewed for seasons 27 (2015–16) and 28
+            (2016–17), consisting of 22 episodes each.[4][5] On November 4, 2016, the series was renewed for seasons 29
+            (2017–18) and 30 (2018–19), consisting of 22 episodes each.[6]
+        </p>
+
+        <p>
+            The Simpsons received widespread critical acclaim throughout its first nine[7][8] or ten[9][10] seasons,
+            which are generally considered its "Golden Age". Time named it the 20th century's best television
+            series,[11] and Erik Adams of The A.V. Club named it "television's crowning achievement regardless of
+            format".[12] On January 14, 2000, the Simpson family was awarded a star on the Hollywood Walk of Fame. It
+            has won dozens of awards since it debuted as a series, including 31 Primetime Emmy Awards, 30 Annie Awards,
+            and a Peabody Award. Homer's exclamatory catchphrase "D'oh!" has been adopted into the English language,
+            while The Simpsons has influenced many adult-oriented animated sitcoms. Despite this, the show has also been
+            criticized for what many perceive as a decline in quality over the years.
+        </p><br/>
+
+        <p style="font: 14px 'microsoft yahei'" class="">
+            Read more: wikipedia <a href="https://en.wikipedia.org/wiki/The_Simpsons" target="_blank">entry</a>
+        </p>
+    </div>
+    <div class="w clearfix goToWatchMe-simContent">
+        <h5 class="goToWatchMeh5">不污动画</h5>
+        <ul class="goToWatchMe " style="background-color: #0050a3">
+            <li><a href="javascript:;"><img src="img/AmerciaCT1.png" alt="" title="马男波杰克" style="height: 100%"/></a>
+            </li>
+            <li><a href="javascript:;"><img src="img/AmerciaCT2.png" alt="" title="瑞克和莫里" style="height: 100%"/></a>
+            </li>
+            <li><a href="javascript:;"><img src="img/AmerciaCT3.png" alt="" title="南方公园" style="height: 100%"/></a></li>
+            <li><a href="javascript:;"><img src="img/AmerciaCT4.png" alt="" title="超级科学伙伴" style="height: 100%"/></a>
+            </li>
+            <li><a href="javascript:;"><img src="img/AmerciaCT5.png" alt="" title="脆莓公园" style="height: 100%"/></a></li>
+        </ul>
+        <!--<div class="goToWatchMe-content"></div>-->
+    </div>
+</div>
+<div class="myCTfooter">
+    <div class="myCTfooter-inner w">
+        <ul class="myCTfooter-about clearfix">
+            <li>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-us-0">简介</a></dd>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-us-1">联系我们</a></dd>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-us-2">合作伙伴</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>加入我们</dt>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-join-0">招聘职位</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>网站条款</dt>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-legal-0">会员条款</a></dd>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-legal-1">社区论坛</a></dd>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-legal-2">版权声明</a></dd>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-legal-3">免责声明</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-help-0">新手上路</a></dd>
+                    <dd><a href="#" target="_blank" rel="nofollow" data-bn-ipg="index-last-help-1">使用帮助</a></dd>
+                    <dd><a href="#" target="_blank" data-bn-ipg="index-last-help-2">网站地图</a></dd>
+                    <dd><a href="#" target="_blank" data-bn-ipg="index-last-help-3">使用帮助</a></dd>
+                </dl>
+            </li>
+            <li class="TOP ">
+                <a href="#nav">back to top</a>
+            </li>
+        </ul>
+        <div class="simCopyright">
+            <p>@copyright &nbsp; Front-end employment class 25 The ten group</p>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    //    其他动画片推荐部分
+    $(function () {
+
+        var simConfig = [
+            {
+                name: "马男波杰克",
+                content: "本剧的世界设定是普通人类和拟人化的动物共同生活在一起，除了外形，这些动物跟人类没什么不同。马男波杰克（威尔·阿奈特 Will Arnett 配音）就是一匹中年过气明星马，他年轻时主演的电视剧《胡闹的小马》风靡一时，而今他已是无人问津的过气明星，与人类废柴陶德（亚伦·保尔 Aaron Paul 配音）一同生活在LA的一所别墅里。为了重整旗鼓，波杰克在经纪人兼前女友卡罗琳公主（艾米·塞德丽丝 Amy Sedaris 配音）催促下决定出版一部自传，希望回到大众视野里。但是由于波杰克过分拖延迟迟不肯下笔，出版社介绍了一位枪手作者戴安（爱丽森·布里 Alison Brie 配音）给他。波杰克多番拒绝，终于，在一个派对上，他与戴安相遇了，却发现她竟是自己的死对头花生酱先生的女朋友。"
+            },
+            {
+                name: "瑞克与莫蒂",
+                content: "该剧描述天才疯子科学家Rick（瑞克）在失踪20年之后突然回到女儿Beth的生活中。Rick总是将他的外孙Morty（莫蒂）拖进他的疯狂实验与旅行。每当他发明一个充满科幻色彩的小玩意之后，Morty就会用他独特的方式给家中添一份乱。"
+            },
+            {
+                name: "南方公园",
+                content: "四个小男孩生活在一个平行宇宙里，在这个只有夏天和冬天的科罗拉多小镇生活的人们都头脑疯狂，行为怪异，不可名状。在这里有外星人入侵、会说话的屎、政治革命、虐待儿童……需要指出的是，其中有两个小孩是创造者的化身：怀疑主义的斯坦是帕克的化身，而认真、敏感的犹太孩子凯尔是斯通的化身。（斯坦曾因为他的怀疑论得了亚斯伯格症，而凯尔则几乎每一次都充当四人组中良心发现和总结经验的角色。）作家和纪录片导演亚瑟·布雷德福德说：“帕克是一个富于创造性的人，但他的创造不能离开斯通。斯通是一个有全局观的思想者，而帕克是个典型的创意天才。斯通经常会跟他们的老板争吵，而帕克总是会在旁边笑，然后走开。”《南方公园》经常通过歪曲式的摹仿来讽刺和嘲弄美国文化和社会时事的各个方面，挑战了许多根深蒂固的观念和禁忌并因其中的粗口、黑色幽默和超现实幽默而著名。 "
+            },
+            {
+                name: "超级科学伙伴",
+                content: "带有架空穿越元素的超级英雄动画，背景设定中依稀可以看到即时战略游戏《红色警戒》的影子。大英帝国首相温斯顿·丘吉尔为了挽回盟军在二战战场的颓势（红警是冷战变热战），返回20世纪初召集了一帮伟大的“科学家”，他们分别是：雷电法王特斯拉、辐射女王居里、迷香巫婆塔普提、大德鲁伊达尔文、恋母狂魔弗洛伊德以及闪电侠爱因斯坦。不过，影片中的超级科学英雄全都变成了反科学怪客，弗洛伊德还带有明显少儿不宜的生活习性。"
+            },
+            {
+                name: "脆莓公园",
+                content: "讲述了一群国家公园森林管理员遭遇的种种倒霉事件。就在公园面临关门大吉的危难时刻，一个新成员的加入挽救了局面。"
+            }
+        ]
+
+        var simarr = [];
+        for (var i = 0; i < simConfig.length; i++) {
+            var str = '<div>' +
+                    '<p>' + simConfig[i].name + '<button type="button" class="close ctclose" style="color: white" aria-label="Close"><span aria-hidden="true">&times;</span></button> ' + '</p>' +
+                    '<p>' + simConfig[i].content + '</p>' + '</div>'
+            simarr.push(str);
+        }
+        console.log(simarr);
+
+        $(".goToWatchMe>li").mouseenter(function () {
+            $(this).stop().animate({"width": "400px"}).siblings("li").stop().animate({"width": "147px"});
+        })
+        $(".goToWatchMe>li").mouseleave(function () {
+            $(this).stop().animate({"width": "198px"}).siblings("li").stop().animate({"width": "198px"});
+        })
+
+        $(".goToWatchMe>li").click(function () {
+            var idx = $(this).index();
+            console.log(idx);
+            $(".goToWatchMe-simContent").append(simarr[idx]);
+            $(".goToWatchMe-simContent>div").addClass("goToWatchMe-content");
+            console.log($(".goToWatchMe-simContent>div").hasClass('goToWatchMe-content'));
+            $(".goToWatchMe-simContent>div").index();
+
+            console.log($(".ctclose").hasClass("ctclose"));
+            $("p").on("click", ".ctclose", function () {
+                $(this).parent().parent().remove();
+            })
+        })
+
+        //
+//        $(".ctclose").click(function () {
+//            $(this).parent().parent().hide();
+//        })
+
+
+    })
+    //点击按钮字体变换
+    $(function () {
+        var ft = 16;
+        $(".btntobig").click(function () {
+            ft++;
+            $(".simContent>p").css("fontSize", ft + "px")
+            ftcurrent = ft;
+            console.log(ft);
+        })
+        $(".btntosm").click(function () {
+            ftcurrent--;
+            $(".simContent>p").css("fontSize", ftcurrent + "px")
+            ft = ftcurrent;
+            console.log(ftcurrent);
+        })
+
+    })
+
+
+</script>
+</body>
+<script src="js/XFT.js"></script>
+<script src="layui/layui.js"></script>
+</html>
